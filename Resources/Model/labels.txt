@@ -1,0 +1,10 @@
+0 plastico
+1 organico
+2 baterias
+3 carton
+4 ropa
+5 vidrio
+6 metal
+7 papel
+8 zapatos
+9 general
