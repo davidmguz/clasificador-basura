@@ -24,20 +24,23 @@ pathList = os.listdir(pathFolderBins)
 for path in pathList:
     imgBinsList.append(cv2.imread(os.path.join(pathFolderBins, path), cv2.IMREAD_UNCHANGED))
 
+# 0=Fondo
+# 1=
+
 # 0=Recyclable
 # 1=Hazardous
 # 2=Food
 # 3=Residual
 
 classDic={0:None,
-          1:0,
+          1:3,
           2:0,
-          3:3,
+          3:2,
           4:3,
           5:1,
-          6:1,
-          7:2,
-          8:2}
+          6:3,
+          7:0,
+          8:1}
 
 while True:
     _, img = cap.read()
